@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelForge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pixelforge.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="root">
+
+        <div class="header">
+            <div class="header-logo-container">
+                <img src="logo.png" alt="PixelForge Logo" class="header-logo">
+            </div>
+            <h3 class="header-tagline"></h3>
+            <div class="header-process">
+                <h3>Image</h3>
+                <h3>➡</h3>
+                <h3>Pixels</h3>
+            </div>
+        </div>
+
+        <div class="mainContent-container">
+            <div class="mainContent">
+                <div class="mainContent-placeholder-1">
+                    <button class="mainContent-placeholder-1-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    <div>Upload Image</div>
+                    <input type="file" class="mainContent-fileInput" multiple hidden>
+                   </button>
+                </div>
+                <div class="mainContent-placeholder-2">(You can upload upto 10 images)</div>
+                <div class="mainContent-placeholder-3">(Drag and drop here)</div>
+                <div class="mainContent-pixels">
+                    <div><button class="pixels-choose-text">Convert to Images by pasting pixels (Live preview!)</button><div class="pixels-placeholder"> Recommended if pixels are less (width<=1920)</div></div>
+                    <div><button class="pixels-choose-file">Convert to Images by uploading file</button><div class="pixels-placeholder">Recommended if pixels are more (width>=1920)</button></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="pixelforge.js"></script>
+</body>
+</html>
+
